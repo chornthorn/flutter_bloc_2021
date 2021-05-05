@@ -23,7 +23,7 @@ class UserBloc extends Bloc<UserEvent, UserState> {
         final res = await userRepository.getUserList();
         yield UserLoaded(res);
       } catch (e) {
-        yield UserFailure("User can't load!");
+        yield UserFailure("User can'!");
       }
     }
   }
